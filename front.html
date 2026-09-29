@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang ="en">
+
+    <head>
+        <link rel="stylesheet" href="style.css">
+         <link rel="preconnnect" href="https://fonts.googleapis.com"> <!-- Am not sure about this twoo line if they will work -->
+        <link rek="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    </head>
+        <header>
+            <div class="header-title">
+                <span>Sleeek</span>
+                <img src="/img/freeee.jpg" alt="poker face" class="poker-img">
+                <span>Poker</span>
+            </div>
+            <h2 class="sub-header">Stock Predictions</h2>
+        </header>
+        <main>
+            <section class="action-panel">
+                <label for="ticket-input">
+                    Add up to 3 stock tickers below to get a super accurate stock prediction report👇
+                </label>
+            </section>
+            <id="ticker-input-form">
+                <input type="text" id="ticker-input" placeholder="MSFT" maxlength="5">
+                <button type="submit" class="add-ticker-btn" id="add-btn">+</button>
+                </form>
+                <div class="ticker-choice-display"></div>
+
+                <button class="generate-report-btn" disabled>GENERATE REPORT</button>
+
+                <p class="tagline">Always correct 15% of the time!</p>
+                </section>
+
+                
+                <section class="loading-panel" style="display: none;">
+                    <div class="spinner"></div>
+                    <p id="api-message">Querying stock market data...</p>
+                </section>
+
+                
+                <section class="output-panel" style="display: none;">
+                    <h2>Your Stock Report 📈</h2>
+                    
+                </section>
+        </main>
+
+        <footer>
+            <p>&copy; This is not real financial advice!</p>
+        </footer>
+
+        
+        <script type="module" src="index.js"></script>
+
+        </main>
+        </body>
+
+        </htm>
